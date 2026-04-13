@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ExpenseAI - AI-powered expense tracking with SMS parsing and intelligent categorization">
+    <title>ExpenseAI | Intelligent Expense Tracking</title>
+
+    <!-- Google Fonts: Syne (display) + DM Mono (mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <!-- Animated Background Grid -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fa-solid fa-bolt"></i>
+                <span>ExpenseAI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li class="mobile-only"><a href="index.html" class="btn-nav btn-nav-mobile">Launch App</a></li>
+            </ul>
+            <a href="index.html" class="btn-nav">Launch App</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Powered by AI</span>
+            </div>
+
+            <h1 class="hero-title">
+                Track Expenses<br>
+                <span class="gradient-text">Like a Hacker</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Forward SMS alerts. We parse everything.
+                <br>Zero manual entry. Pure automation.
+            </p>
+
+            <div class="hero-cta">
+                <a href="index.html" class="btn-primary">
+                    <i class="fa-solid fa-rocket"></i>
+                    Launch Dashboard
+                </a>
+                <a href="#how-it-works" class="btn-secondary">
+                    <i class="fa-solid fa-play"></i>
+                    See How It Works
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">0.02s</span>
+                    <span class="stat-label">Parse Time</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Private</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Terminal Window -->
+        <div class="hero-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="terminal-title">sms_parser.py</span>
+            </div>
+            <div class="terminal-body">
+                <pre><code><span class="code-line"><span class="code-prompt">$</span> parsing incoming SMS...</span>
+<span class="code-line"><span class="code-success">✓</span> Amount: <span class="code-accent">₹2,450.00</span></span>
+<span class="code-line"><span class="code-success">✓</span> Merchant: <span class="code-accent">Uber India</span></span>
+<span class="code-line"><span class="code-success">✓</span> Category: <span class="code-accent">Transport</span></span>
+<span class="code-line"><span class="code-success">✓</span> Date: <span class="code-accent">2026-04-12</span></span>
+<span class="code-line"><span class="code-prompt">$</span> expense saved to db.json</span>
+<span class="code-line code-cursor">_</span></pre>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Bento Grid -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Built for Speed.<br>Designed for Privacy.</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Large Feature Card -->
+                <div class="bento-card bento-large">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <h3>SMS Auto-Parsing</h3>
+                    <p>Forward bank SMS alerts. Our regex + Ollama AI extracts amount, merchant, date, and category automatically.</p>
+                    <div class="bento-code">
+                        <code>HDFC Bank: Rs.450 debited... → { amount: 450, category: "Food" }</code>
+                    </div>
+                </div>
+
+                <!-- Tall Feature Card -->
+                <div class="bento-card bento-tall">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Split Expenses</h3>
+                    <p>Track who owes what. Auto-calculate settlements.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Multi-person splits</li>
+                        <li><i class="fa-solid fa-check"></i> Unequal divisions</li>
+                        <li><i class="fa-solid fa-check"></i> Settlement tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Balance history</li>
+                    </ul>
+                </div>
+
+                <!-- Standard Cards -->
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>AI Categorization</h3>
+                    <p>Gemma 2B classifies expenses when keywords fail.</p>
+                </div>
+
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Local-First</h3>
+                    <p>JSON file database. Your data never leaves your machine.</p>
+                </div>
+
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Real-Time Dashboard</h3>
+                    <p>Visualize spending with instant updates.</p>
+                </div>
+
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Bank-Grade Security</h3>
+                    <p>No cloud. No tracking. No third parties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Workflow</span>
+                <h2 class="section-title">Three Steps.<br>Zero Friction.</h2>
+            </div>
+
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Receive SMS</h3>
+                        <p>Your bank sends a transaction alert. Nothing changes on your end.</p>
+                        <div class="step-visual sms-mock">
+                            <i class="fa-solid fa-message"></i>
+                            <div class="sms-preview">
+                                <strong>HDFC Bank</strong>
+                                <p>Rs. 350.00 debited from ...Ubers Eats...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Forward to ExpenseAI</h3>
+                        <p>Auto-forward SMS to the parser. Runs locally via Ollama.</p>
+                        <div class="step-visual parser-mock">
+                            <i class="fa-solid fa-microchip"></i>
+                            <div class="parser-status">
+                                <span class="pulse"></span>
+                                <code>Processing with gemma:2b...</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workflow-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Done. Logged.</h3>
+                        <p>Expense appears in dashboard. Category assigned. Ready to split.</p>
+                        <div class="step-visual dashboard-mock">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <div class="dashboard-preview">
+                                <strong>₹350.00</strong>
+                                <span>Food & Dining</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo CTA -->
+    <section id="demo" class="demo">
+        <div class="demo-container">
+            <div class="demo-content">
+                <h2>Ready to Ditch Spreadsheets?</h2>
+                <p>Join the future of expense tracking. No credit card required.</p>
+                <a href="index.html" class="btn-primary btn-large">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Open Dashboard
+                </a>
+            </div>
+            <div class="demo-visual">
+                <div class="floating-card card-1">
+                    <i class="fa-solid fa-burger"></i>
+                    <span>₹450.00</span>
+                    <small>Food</small>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fa-solid fa-taxi"></i>
+                    <span>₹180.00</span>
+                    <small>Transport</small>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fa-solid fa-film"></i>
+                    <span>₹800.00</span>
+                    <small>Entertainment</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>ExpenseAI</span>
+                </a>
+                <p>AI-powered expense tracking for the privacy-conscious.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Tech</h4>
+                    <a href="#">FastAPI</a>
+                    <a href="#">Ollama AI</a>
+                    <a href="#">Vanilla JS</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ExpenseAI. Built with <i class="fa-solid fa-heart"></i> and caffeine.</p>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>
