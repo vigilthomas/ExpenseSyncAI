@@ -1,5 +1,5 @@
 /**
- * ExpenseAI Landing Page Interactions
+ * ExpenSync AI Landing Page Interactions
  * Scroll animations, parallax, and micro-interactions
  */
 
@@ -240,6 +240,6 @@ if (demoSection) {
 }
 
 // --- Console Easter Egg ---
-console.log('%c ExpenseAI ', 'background: #00ff87; color: #0a0a0f; font-size: 20px; font-weight: bold; padding: 10px 20px;');
+console.log('%c ExpenSync AI ', 'background: #00ff87; color: #0a0a0f; font-size: 20px; font-weight: bold; padding: 10px 20px;');
 console.log('%c Built with vanilla HTML, CSS, JS — zero dependencies ', 'color: #a0a0b0; font-size: 12px;');
 console.log('%c Ready to track expenses like a hacker? Launch the dashboard! ', 'color: #00ff87; font-size: 14px;');
